@@ -1559,7 +1559,7 @@ function engancharVecesBtns(w, idPrefix){
 function cardHtml(w, esBodegaPropia, idPrefix){
   idPrefix = idPrefix || '';
   const quienColor = (QUIEN_TODOS.find(q=>q.v===w.quien)||{}).c || 'var(--slate)';
-  const initials = w.quien==='Ambos' ? 'M+A' : (w.quien||'?')[0];
+  const initials = w.quien==='Ambos' ? 'M+I' : (w.quien||'?')[0];
   return `
   <div class="card" id="${idPrefix}card-${w.id}">
     <div class="capsule" style="background:${tipoColor(w.tipo)}"></div>
